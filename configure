@@ -2967,6 +2967,7 @@ vp6f_decoder_select="vp6_decoder"
 vp7_decoder_select="h264pred videodsp vp8dsp"
 vp8_decoder_select="h264pred videodsp vp8dsp"
 vp9_decoder_select="videodsp vp9_parser vp9_superframe_split_bsf"
+vvc_decoder_select="cabac golomb videodsp"
 wcmv_decoder_select="inflate_wrapper"
 webp_decoder_select="vp8_decoder exif"
 wmalossless_decoder_select="llauddsp"
@@ -3268,6 +3269,7 @@ hevc_parser_select="hevcparse hevc_sei"
 mpegaudio_parser_select="mpegaudioheader"
 mpeg4video_parser_select="h263dsp mpegvideodec qpeldsp"
 vc1_parser_select="vc1dsp"
+vvc_parser_select="cbs_h266"
 
 # bitstream_filters
 aac_adtstoasc_bsf_select="adts_header mpeg4audio"
@@ -3285,6 +3287,7 @@ mjpeg2jpeg_bsf_select="jpegtables"
 mpeg2_metadata_bsf_select="cbs_mpeg2"
 trace_headers_bsf_select="cbs"
 vp9_metadata_bsf_select="cbs_vp9"
+vvc_metadata_bsf_select="cbs_h266"
 
 # external libraries
 aac_at_decoder_deps="audiotoolbox"
